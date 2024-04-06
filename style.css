@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Quicksand:wght@300..700&display=swap');
+
+:root {
+--fonte_de_titulo: 'Dancing Script',cursive;
+--fonte_padrao: "Quicksand", sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte_padrao);
+}
+
+#apresentacao {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    /* background-image: url(image/fundo_doces.jpg); */
+    background-color: rgb(255, 246, 233);
+    background-size: cover;
+    height: 50vh;
+}
+
+#apresentacao > div {
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    
+}
+#apresentacao > div > h1 {
+    font-family: var(--fonte_de_titulo);
+    font-size: 3em;
+    padding: 20px;
+    color: rgb(95, 57, 6);
+
+}
+#apresentacao > div > p {
+    color: rgb(54, 31, 0);
+    padding: 0px 15px;
+}
+
+#apresentacao > div > img {
+    width: 160px;
+}
+
+#apresentacao > div > a {
+    text-decoration: none;
+    color: rgb(54, 31, 0);
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    display: block;
+    margin: auto;
+    border: none;
+    padding: 10px;
+    background-color: rgb(72, 255, 0);
+    color: white;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.377);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.363);
+    border-radius: 15px;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+button:hover {
+    background-color: rgb(58, 204, 0);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.363);
+}
+
+#conteudo h2 {
+    padding: 30px;
+    font-family: var(--fonte_de_titulo);
+    font-size: 2em;
+}
+
+#conteudo {
+    text-align: center;
+    line-height: 30px;
+}
+#conteudo > p {
+    padding: 20px;
+    padding-bottom: 50px;
+}
+#instagram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(image/fundo_doces.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+}
+
+#oferta {
+    font-size: 1em;
+    padding-bottom: 100px;
+}
+#oferta > img {
+    width: 300px;
+
+}
+
+#oferta p{
+    padding: 10px;
+}
+
+#preco{
+    font-size: 2.5em;
+    font-family: var(--fonte_de_titulo);
+    color: rgb(30, 150, 0);
+}
+
+#oferta  button {
+    font-size: 2em;
+}
+
+span {
+    color: red;
+    font-size: 1.1em;
+}
+
+
+@media screen and (min-width: 768px) {
+    #conteudo {
+        width: 700px;
+        margin: auto;
+    }
+}
