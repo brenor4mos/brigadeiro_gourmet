@@ -14,41 +14,44 @@
     font-family: var(--fonte_padrao);
 }
 
-#apresentacao {
+body{
+    height: 100vh;
+}
+
+#apresentacao_brigadeiro {
+    background-color: rgb(255, 246, 233);
+    max-height: 50%;
+    padding: 20px;
+}
+
+.produto {
     display: flex;
     align-items: center; 
     justify-content: center;
     /* background-image: url(image/fundo_doces.jpg); */
-    background-color: rgb(255, 246, 233);
-    background-size: cover;
-    height: 50vh;
+    
 }
 
-#apresentacao > div {
-    width: 50%;
+.produto > div {
+    max-width: 550px;
     text-align: center;
     padding: 10px;
     
 }
-#apresentacao > div > h1 {
+.produto > div > h1 {
     font-family: var(--fonte_de_titulo);
     font-size: 3em;
     padding: 20px;
     color: rgb(95, 57, 6);
 
 }
-#apresentacao > div > p {
+.produto > div > p {
     color: rgb(54, 31, 0);
     padding: 0px 15px;
 }
 
-#apresentacao > div > img {
-    width: 160px;
-}
-
-#apresentacao > div > a {
-    text-decoration: none;
-    color: rgb(54, 31, 0);
+.produto > div > img {
+    width: 360px;
 }
 
 a {
@@ -57,18 +60,17 @@ a {
 
 button {
     display: block;
-    margin: auto;
+    margin: 15px auto;
     border: none;
-    padding: 10px;
+    padding: 20px;
     background-color: rgb(72, 255, 0);
     color: white;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.377);
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.363);
-    border-radius: 15px;
-    font-size: 20px;
-    margin-top: 50px;
-}
+    border-radius: 35px;
+    font-size: 25px;
 
+}
 button:hover {
     background-color: rgb(58, 204, 0);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.363);
@@ -81,12 +83,13 @@ button:hover {
 }
 
 #conteudo {
+    display: none;
     text-align: center;
     line-height: 30px;
 }
+
 #conteudo > p {
     padding: 20px;
-    padding-bottom: 50px;
 }
 #instagram {
     display: flex;
@@ -125,6 +128,19 @@ span {
     color: red;
     font-size: 1.1em;
 }
+
+/* --------------------------------------------- */
+
+#apresentacao_bolos{
+    max-height: 50%;
+    background-image: url(https://chefisisalvarez.com.br/wp-content/uploads/2023/06/AnyConv.com__Banner_01-Confeitaria-mob2-copiar.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    padding: 15px;
+}
+
+
 
 
 @media screen and (min-width: 768px) {
