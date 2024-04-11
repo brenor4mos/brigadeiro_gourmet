@@ -14,29 +14,38 @@
     font-family: var(--fonte_padrao);
 }
 
+@keyframes introImagem {
+    0% {
+        width: 100px;
+    }
+    100%{
+        width: 180px;
+    }
+}
+
+
+
 body{
     height: 100vh;
 }
 
 #apresentacao_brigadeiro {
-    background-color: rgb(255, 246, 233);
+    background-image: linear-gradient(to bottom,  rgb(69, 133, 252) , white);
     max-height: 50%;
     padding: 20px;
 }
 
 .produto {
     display: flex;
+    flex-direction: column;
     align-items: center; 
     justify-content: center;
     /* background-image: url(image/fundo_doces.jpg); */
-    
 }
 
 .produto > div {
-    max-width: 550px;
+    width: 350px;
     text-align: center;
-    padding: 10px;
-    
 }
 .produto > div > h1 {
     font-family: var(--fonte_de_titulo);
@@ -51,9 +60,18 @@ body{
 }
 
 .produto > div > img {
-    width: 360px;
+    width: 180px;
+    animation-name: introImagem;
+    animation-duration: 1s;
 }
-
+.produto > div > h2 {
+    margin: auto;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.295);
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+}
 a {
     text-decoration: none;
 }
@@ -62,14 +80,13 @@ button {
     display: block;
     margin: 15px auto;
     border: none;
-    padding: 20px;
+    padding: 15px;
     background-color: rgb(72, 255, 0);
     color: white;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.377);
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.363);
     border-radius: 35px;
     font-size: 25px;
-
 }
 button:hover {
     background-color: rgb(58, 204, 0);
@@ -142,10 +159,22 @@ span {
 
 
 
-
 @media screen and (min-width: 768px) {
-    #conteudo {
-        width: 700px;
-        margin: auto;
+    @keyframes introImagem {
+        0%{
+            width: 100px;
+        }
+        100%{
+            width: 280px;
+        }
+    }
+
+    .produto{
+        flex-direction: row;
+        height: 49vh;
+        padding: 50px;
+    }
+    .produto > div > img {
+        width: 280px;
     }
 }
